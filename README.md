@@ -1,99 +1,45 @@
-📦 Product Category Classification using NLP
-Build a machine learning model to automatically classify product descriptions into one of four categories using Natural Language Processing techniques.
+## 🚀 Text Classification Web App
+This is a lightweight and interactive web application that classifies input text into one of four product categories — Books, Clothing & Accessories, Electronics, or Household — using a machine learning model trained on real e-commerce product data.
 
-💼 Problem Statement
-Businesses often have thousands of product listings. Manually tagging them into categories like Books, Electronics, Clothing & Accessories, and Household is inefficient and prone to errors.
-
-The goal of this project is to:
-
-Automatically classify product descriptions based on their textual content
-
-Enable faster cataloging and better search optimization
-
-Improve user experience through accurate product categorization
-
-🧾 Dataset Overview
-📄 4,000 records × 2 columns
+![Screenshot 2025-04-24 141515](https://github.com/user-attachments/assets/a45b8793-7274-42e9-9e9f-4561f7fb9b2c)
 
 
-Column	Description
-message	Product description (text)
-label	Product category (target: 4 classes)
-🎯 Target Categories:
+## 🔍 Demo
+“This wireless Bluetooth speaker has amazing sound quality and 10 hours of battery life.”
+✅ Prediction: Electronics
 
-0 → Books
+## 🛠 Built With
+🐍 Python
 
-1 → Clothing & Accessories
+⚙️ Flask
 
-2 → Electronics
+🧠 Scikit-learn
 
-3 → Household
+📄 HTML (Jinja2 templating)
 
-✅ Balanced dataset: 1000 records per category
-✅ No missing values
+💾 Joblib (for model persistence)
 
-🧠 Techniques Used
-📚 Supervised Learning – Text Classification
-🔡 Natural Language Processing (NLP)
+## 💡 How It Works
+User enters a product description in the textbox.
 
-Text Cleaning (Regex, Lowercasing, Stopword Removal)
+The description is vectorized using a saved TF-IDF model.
 
-Stemming using NLTK's PorterStemmer
+The machine learning model predicts the category label.
 
-Vectorization using CountVectorizer
+The result is displayed on the same page.
 
-🤖 Model Used
+## ✨ Future Enhancements
+Add confidence scores for predictions
 
-Multinomial Naive Bayes Classifier
+Improve UI with Tailwind or Bootstrap
 
-📈 Evaluation
+Deploy using Streamlit, Render, or Hugging Face Spaces
 
-Accuracy on Train & Test sets
+## 🙌 Author
+Ramya – Data Scientist | ML & AI Enthusiast
+Top 6% on Kaggle | NASSCOM Gold Medalist
+📫 Connect with me on LinkedIn
 
-Cross-validation scores
 
-Misclassification checks
 
-🔍 Project Workflow
-Data Preprocessing
 
-Clean raw text (remove punctuation, lowercase, stopwords, stemming)
-
-Convert text to numerical features using CountVectorizer
-
-Model Building
-
-Split dataset into training and testing
-
-Train MultinomialNB classifier
-
-Evaluation
-
-Check train/test accuracy
-
-Cross-validation for generalization
-
-Prediction Interface
-
-Built using Flask to allow real-time prediction of new product descriptions
-
-🧪 Sample Prediction
-Input:
-"This 4K smart TV with voice control and wireless connectivity offers an immersive viewing experience."
-
-Predicted Category:
-Electronics
-
-🧰 Tech Stack
-Python
-
-Pandas, NumPy
-
-NLTK, Scikit-learn
-
-Flask (for web deployment)
-
-Jupyter Notebook (for training & analysis)
-
-🖼️ Web App Screenshot
-(📸 Add your Flask app UI screenshot here)
