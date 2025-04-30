@@ -32,10 +32,7 @@ Improve UI with Tailwind or Bootstrap
 
 Deploy using Streamlit, Render, or Hugging Face Spaces
 
-## 🙌 Author
-Ramya – Data Scientist | ML & AI Enthusiast
-Top 6% on Kaggle | NASSCOM Gold Medalist
-📫 Connect with me on LinkedIn
+
 
 
 
